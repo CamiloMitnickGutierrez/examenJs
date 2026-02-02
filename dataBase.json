@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "cristian",
+      "email": "a@gmail.com",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "name": "camilo",
+      "email": "c@gmail.com",
+      "password": "1",
+      "role": "user",
+      "id": 2
+    }
+  ],
+  "tasks": [
+    {
+      "nameTask": "cartelera",
+      "descriptionTask": "python",
+      "dateTask": "2026-02-02",
+      "userId": 2,
+      "status": "pendiente",
+      "id": 1
+    }
+  ]
+}
