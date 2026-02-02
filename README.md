@@ -20,8 +20,8 @@ CRUDTASK is a web application designed to simulate a complete flow of academic t
 
 - **Frontend:**
   - HTML5, CSS3
-  - CSS Frameworks: Bootstrap 5, Tailwind CSS, Materialize, Foundation, Bulma
-  - Vanilla JavaScript (no frameworks)
+  - CSS Frameworks: Bootstrap 5
+  - Vanilla JavaScript
 
 - **Development Tools:**
   - Vite (frontend development server).
@@ -53,11 +53,8 @@ examenJs/
 
 ---
 
-## Installation and Setup
 
-### Prerequisites
 
-- Ensure [Node.js](https://nodejs.org/) is installed (version 16 or higher).
 
 ### Steps to Run the Project
 
@@ -168,7 +165,7 @@ Example data (`dataBase.json`):
 
 ---
 
-## Contributors
+
 
 This project has been built by:
 - Camilo Mitnick Gutierrez
