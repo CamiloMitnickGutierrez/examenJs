@@ -16,13 +16,6 @@
     }
   ],
   "tasks": [
-    {
-      "nameTask": "cartelera",
-      "descriptionTask": "python",
-      "dateTask": "2026-02-02",
-      "userId": 2,
-      "status": "pendiente",
-      "id": 1
-    }
+    
   ]
 }

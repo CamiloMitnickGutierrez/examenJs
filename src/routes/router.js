@@ -10,7 +10,7 @@ import { PerfilPage } from "../components/PerfilPage.js"
 
 
 
-
+//hashes de rutas
 const routes = {
     "#/":LoginPage(),
     "#/login":LoginPage(),
@@ -23,6 +23,8 @@ const routes = {
 }
 
 
+//manejador de las rutas orquestador 
+
 export const routeManager = async () => {
 
     const root = document.getElementById("root")
@@ -30,6 +32,8 @@ export const routeManager = async () => {
     const verifyLogueo = verifySesion()
 
     const hash = window.location.hash || "#/login"
+
+    // aca vericamos logueo por si quieren ir a rutas protegidas
 
     if ((hash == "#/tasks" || hash == "#/dashboard" || hash == "#/newtask" || hash == "#/edit-task" || hash == "#/perfilUser") && !verifyLogueo){
 
@@ -45,6 +49,8 @@ export const routeManager = async () => {
     const userRole = getRole()
 
     if (verifyLogueo){
+
+        // aca protegemos rutas segun el rol
 
         if ( (hash == "#/tasks" || hash == "#/newtask" || hash == "#/edit-task" || hash == "#/perfilUser") && userRole == "admin"){
 

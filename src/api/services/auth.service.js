@@ -1,4 +1,5 @@
 
+// servicio para crear un usuario
 export const createUser = async (user) =>{
 
 try {
@@ -27,6 +28,7 @@ try {
 
 }
 
+//servicio para buscar el user en la db para l utenticacion
 export const authUser = async (email,password) => {
 
     const url = `http://localhost:3050/users?email=${email}&password=${password}`
@@ -41,6 +43,8 @@ export const authUser = async (email,password) => {
         }
 
         const user = await data.json()
+
+        //retorna si no hay user es null
 
         return user.length > 0 ? user[0] : null
         

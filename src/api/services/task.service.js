@@ -1,4 +1,6 @@
 
+
+// servicio para crear tarea
 export const createTask = async (newTask) =>{
 
     try {
@@ -24,6 +26,7 @@ export const createTask = async (newTask) =>{
 
 }
 
+// servicio para cargar  tareas 
 export const loadTask = async(userId) =>{
 
     try {
@@ -48,6 +51,8 @@ export const loadTask = async(userId) =>{
     }
 
 }
+
+// servicio para borrar tarea
 
 export const deleteTask = async (taskId) =>{
 
@@ -75,6 +80,8 @@ export const deleteTask = async (taskId) =>{
     }
 
 }
+
+//servicio para actualizar tarea
 
 export const updateTask = async (taskId,updateData) => {
 

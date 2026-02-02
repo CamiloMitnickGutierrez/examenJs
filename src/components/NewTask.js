@@ -42,6 +42,8 @@ export const NewTask= () =>{
         `,
     loadRender: () =>{
 
+
+        // dom para crear una nueva tarea y mandarla al sevicio createTask se le asigna id para que una tarea le corresponda al user que la creo
         const form  = document.getElementById("form-crear-tarea")
 
         if ( form){

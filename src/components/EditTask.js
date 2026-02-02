@@ -40,6 +40,8 @@ export const EditTask = () => {
         `,
 
         loadRender: async () => {
+
+            //captura lo del dom para ponder editar la tarea
             const taskId = localStorage.getItem('editTaskId');
             const userId = getIdUser();
             const form = document.getElementById("form-editar-tarea");
@@ -52,6 +54,8 @@ export const EditTask = () => {
 
             
             try {
+
+                //trae los datos de la tarea anterior
               
                 const tareas = await loadTask(userId);
                 const tareaActual = tareas.find(t => t.id == taskId);
@@ -69,6 +73,8 @@ export const EditTask = () => {
                 window.location.hash = "/tasks";
             }
 
+
+            //actualiza la taera 
       
             form.addEventListener("submit", async (e) => {
                 e.preventDefault();
