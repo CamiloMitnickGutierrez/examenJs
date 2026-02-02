@@ -20,8 +20,8 @@ CRUDTASK es una aplicación web diseñada para simular un flujo completo de gest
 
 - **Frontend:**
   - HTML5, CSS3
-  - Frameworks CSS: Tailwind CSS, Bootstrap 5, Materialize, Foundation, Bulma
-  - JavaScript sin frameworks adicionales (Vanilla)
+  - Bootstrap 5
+  - JavaScript s(Vanilla)
   
 - **Desarrollo Local:**
   - Vite (servidor de desarrollo frontend).
@@ -55,11 +55,8 @@ examenJs/
 
 ## Instalación y Configuración
 
-### Prerrequisitos
-
-- Tener [Node.js](https://nodejs.org/) instalado (versión 16 o superior).
-
-### Pasos para Ejecutar
+tener node js
+### Pasos para Ejecutar 
 
 1. **Clonar el repositorio**:
 
@@ -78,7 +75,7 @@ examenJs/
 
    CRUDTASK utiliza `concurrently` para ejecutar dos servicios simultáneamente:
    - **Vite**: para la interfaz de usuario en `http://localhost:5173`.
-   - **JSON Server**: para la simulación de la API en `http://localhost:3000`.
+   - **JSON Server**: para la simulación de la API en `http://localhost:3050`.
 
    Para correr ambos servicios, ejecuta el siguiente comando:
 
@@ -105,9 +102,8 @@ examenJs/
 
 ```json
 "scripts": {
-  "dev": "concurrently \"vite\" \"json-server --watch dataBase.json --port 3000\"",
-  "build": "vite build",
-  "preview": "vite preview"
+  "dev": "concurrently \"vite\" \"json-server --watch dataBase.json --port 3050\"",
+  
 }
 ```
 
@@ -115,7 +111,7 @@ examenJs/
 
 `JSON Server` proporciona una API REST rápida, configurada con el archivo `dataBase.json`. Maneja operaciones de tipo CRUD para usuarios, tareas y roles durante el desarrollo.
 
-- Todos los endpoints están disponibles en `http://localhost:3000`.
+- Todos los endpoints están disponibles en `http://localhost:3050`.
 
 Ejemplo de datos (`dataBase.json`):
 ```json
@@ -167,8 +163,8 @@ Ejemplo de datos (`dataBase.json`):
 
 ---
 
-## Contribuciones
+## Elaborado por 
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/mi-funcionalidad`).
-3. Envía un pull request para revisión.
+Camilo Mitnick Gutierrez
+
+clan: Hamilton
