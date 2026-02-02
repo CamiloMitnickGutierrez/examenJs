@@ -105,9 +105,8 @@ examenJs/
 
 ```json
 "scripts": {
-  "dev": "concurrently \"vite\" \"json-server --watch dataBase.json --port 3050\"",
-  "build": "vite build",
-  "preview": "vite preview"
+  "dev": "concurrently \"vite\" \"json-server --watch dataBase.json --port 3050\""
+  
 }
 ```
 
